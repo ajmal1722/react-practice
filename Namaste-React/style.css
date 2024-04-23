@@ -1,6 +1,6 @@
 #root {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
-.heading {
-    color: rgb(222, 35, 35);
+#heading {
+    color: rgb(113, 40, 186);
 }
