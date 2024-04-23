@@ -1,4 +1,4 @@
-const Hero = () => {
+const Hero = (props) => {
   return (
     <section className="bg-indigo-700 py-20 mb-4">
         <div
@@ -8,7 +8,7 @@ const Hero = () => {
             <h1
               className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl"
             >
-              Become a React Dev
+              { props.title }
             </h1>
             <p className="my-4 text-xl text-white">
               Find the React job that fits your skills and needs
