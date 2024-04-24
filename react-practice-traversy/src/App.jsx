@@ -6,13 +6,13 @@ import ViewAllJobs from './assets/components/ViewAllJobs';
 
 const App = () => {
   return (
-    <>
+    <div className='container'>
       <Navbar />
       <Hero >Becomes a react Dev</Hero>
       <HomeCards/>
       <JobListings/>
       <ViewAllJobs/>  
-    </>
+    </div>
   )
 }
 
