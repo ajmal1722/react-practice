@@ -1,5 +1,5 @@
 
-const JobListing = ({ job }) => {
+const SingleJob = ({ job }) => {
   return (
     <div className="bg-white rounded-xl shadow-md relative">
 
@@ -34,4 +34,4 @@ const JobListing = ({ job }) => {
   )
 }
 
-export default JobListing
+export default SingleJob
