@@ -9,5 +9,22 @@ button {
   margin: 12px;
 }
 
+h3 {
+  color: rgb(110, 243, 33);
+}
 
+input {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  background: rgba(95, 92, 92, .9);
+}
 
+p {
+  font-size: large;
+  color: white;
+}
+
+.second {
+  margin-top: 1rem;
+}

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import UseState from './components/UseState';
+import UseEffect from './components/UseEffect';
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <>
             <h1>React Hooks</h1>
             <UseState/>
+            <UseEffect/>
         </>
     )
 }
