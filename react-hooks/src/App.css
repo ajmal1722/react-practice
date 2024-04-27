@@ -1,0 +1,13 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  padding: 0.5rem;
+  margin: 12px;
+}
+
+
+
