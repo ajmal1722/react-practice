@@ -13,3 +13,8 @@ input {
 button {
   margin: 10px;
 }
+
+span {
+  margin-left: 4px;
+  color: rgb(196, 148, 86);
+}
