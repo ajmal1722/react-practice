@@ -11,6 +11,8 @@ button {
 
 h3 {
   color: rgb(110, 243, 33);
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 input {
@@ -27,4 +29,8 @@ p {
 
 .second {
   margin-top: 1rem;
+}
+
+.border {
+  border: 1px solid white;
 }
