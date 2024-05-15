@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 const UseEffect = () => {
 
     const [val, setVal] = useState(0)
-    const [color, setColor] = useState('')
+    const [color, setColor] = useState('gray')
     const [clearup, setClearup] = useState(false)
 
     useEffect(() => {
@@ -29,13 +29,13 @@ const UseEffect = () => {
                 <h3>useEffect</h3>
             </div>
             { clearup && val && (
-                <div style={{background: 'gray', padding: '1rem', margin: '1rem'}}>
+                <div style={{background: color, padding: '1rem', margin: '1rem'}}>
                     <h1>Clear up function worked</h1>
                     <h4>after {val} seconds </h4>
                 </div>
             )
             }
-            <div className='border' style={{ background: color }}>
+            <div className='border'>
                 <button onClick={() => setColor('purple')}>
                     Purple
                 </button>
