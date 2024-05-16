@@ -1,14 +1,16 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 
 const UseMemo = () => {
     const [counterOne, setCounterOne] = useState(0);
     const [counterTwo, setCounterTwo] = useState(0);
 
-    const isEven = () => {
+    
+
+    const isEven = useMemo(() => {
         let i = 1;
         while (i < 500000000) i++
         return counterOne % 2 === 0
-    }
+    }, [counterOne])
 
     console.log('component re-rendered', counterOne, counterTwo)
 
@@ -23,7 +25,7 @@ const UseMemo = () => {
                     { counterOne }
                 </span>
                 <span style={{ color: 'cyan', fontSize: '20px', marginLeft: '1rem'}}>
-                    { isEven() ? 'Even' : 'Odd'}
+                    { isEven ? 'Even' : 'Odd'}
                 </span>
             </div>
             <div>
