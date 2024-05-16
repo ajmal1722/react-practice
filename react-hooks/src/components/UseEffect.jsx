@@ -4,13 +4,13 @@ const UseEffect = () => {
 
     const [val, setVal] = useState(0)
     const [color, setColor] = useState('gray')
-    const [clearup, setClearup] = useState(false)
+    const [cleanup, setcleanup] = useState(false)
 
     useEffect(() => {
-        setClearup(false)
+        setcleanup(false)
         const id = setTimeout(() => {
             
-            setClearup(true)
+            setcleanup(true)
         }, val * 1000);
 
         console.log('state changed', val)
@@ -28,9 +28,9 @@ const UseEffect = () => {
             <div>
                 <h3>useEffect</h3>
             </div>
-            { clearup && val && (
+            { cleanup && val && (
                 <div style={{background: color, padding: '1rem', margin: '1rem'}}>
-                    <h1>Clear up function worked</h1>
+                    <h1>Clean up function is worked</h1>
                     <h4>after {val} seconds </h4>
                 </div>
             )
