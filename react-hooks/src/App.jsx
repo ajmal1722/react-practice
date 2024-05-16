@@ -2,6 +2,7 @@ import { useState } from 'react';
 import UseState from './components/UseState';
 import UseEffect from './components/UseEffect';
 import UseMemo from './components/UseMemo';
+import UseRef from './components/UseRef';
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
             <UseState/>
             <UseEffect/>
             <UseMemo/>
+            <UseRef/>
         </>
     )
 }
