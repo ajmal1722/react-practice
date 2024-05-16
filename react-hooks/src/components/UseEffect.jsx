@@ -23,8 +23,7 @@ const UseEffect = () => {
 
 
     return (
-        <>
-            
+        <> 
             <div>
                 <h3>useEffect</h3>
             </div>
