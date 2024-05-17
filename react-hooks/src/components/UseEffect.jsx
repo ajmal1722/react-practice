@@ -16,6 +16,7 @@ const UseEffect = () => {
         console.log('state changed', val)
 
         return () => {
+            console.log('Cleanup function is called...');
             clearTimeout(id)
         }
     }, [val])
@@ -35,19 +36,31 @@ const UseEffect = () => {
             )
             }
             <div className='border'>
-                <button onClick={() => setColor('purple')}>
+                <button onClick={() => {
+                    console.log('Purple button worked')
+                    setColor('purple')
+                }}>
                     Purple
                 </button>
-                <button onClick={() => setVal(val - 1)}>
+                <button onClick={() => {
+                    console.log('decrement worked...')
+                    setVal(val - 1)
+                }}>
                     Decrement <span style={{ fontSize: '20px', marginLeft: '5px' }}>-</span>
                 </button>
                 <span style={{ fontSize: '20px', color: 'cyan' }}>
                     {val}
                 </span>
-                <button onClick={() => setVal(val + 1)}>
+                <button onClick={() => {
+                    console.log('Increment worked...')
+                    setVal(val + 1)
+                }}>
                     Increment <span style={{ fontSize: '20px', marginLeft: '5px' }}>+</span>
                 </button>
-                <button onClick={() => setColor('orange')}>
+                <button onClick={() => {
+                    console.log('Orange Button worked..')
+                    setColor('orange')
+                }}>
                     Orange
                 </button>
             </div>
